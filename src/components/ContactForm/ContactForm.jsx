@@ -61,7 +61,9 @@ export class ContactForm extends Component {
             value={number}
             onChange={this.handleChange}
           />
-          <Button type="submit">Add contact</Button>
+          <Button type="submit" disabled={!this.state.name}>
+            Add contact
+          </Button>
         </Form>
       </Box>
     );
