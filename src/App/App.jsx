@@ -23,7 +23,7 @@ export class App extends Component {
       number,
     };
 
-    const checkName = this.state.contacts.some(
+    const checkName = this.state.contacts.find(
       item => item.name.toLowerCase() === contact.name.toLowerCase()
     );
 
