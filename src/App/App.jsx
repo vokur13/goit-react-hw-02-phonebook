@@ -27,8 +27,6 @@ export class App extends Component {
       item => item.name.toLowerCase() === contact.name.toLowerCase()
     );
 
-    console.log(checkName);
-
     checkName
       ? alert(`${contact.name} is already in contacts`)
       : this.setState(({ contacts }) => ({
